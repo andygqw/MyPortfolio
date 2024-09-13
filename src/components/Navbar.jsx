@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import '../static/Navbar.css';
 
 const Navbar = () => {
@@ -20,9 +20,8 @@ const Navbar = () => {
       <Toolbar sx={{
         height: '64px',
         display: 'flex',
-        padding: '0 8px 0 28px',
+        padding: '0 10px 0 16px !important',
         maxWidth: '1280px',
-        margin: '0 auto',
       }}>
         <img
           src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
@@ -30,15 +29,21 @@ const Navbar = () => {
           className="logo"
         />
         <Typography variant="h6" className="event-name">
-          / UNIVERSE'24
+          <span className="event-other">/ </span>
+          Andy Wang
+          <span className="event-other"> '24</span>
         </Typography>
+
         <div className="menu">
-          <a href="#">Why attend?</a>
-          <a href="#">Agenda</a>
-          <a href="#">Speakers</a>
+          <a href="#">Why me?</a>
+          <a href="#">Projects</a>
+          <a href="#">Resume</a>
           <a href="#">FAQ</a>
-          <a href="#">Attendee Portal</a>
+          <a href="#">About</a>
         </div>
+        <Button  variant="contained" className="get-contacts">
+          Get contacts
+        </Button>
       </Toolbar>
     </AppBar>
   );
