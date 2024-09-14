@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Box } from '@mui/material';
 import FloatingImage from './FloatingImage';
 import '../static/MainContent.css';
 
@@ -28,7 +28,12 @@ const MainContent = () => {
                     </Button>
                 </div>
             </div>
-            <FloatingImage />
+            <Box sx={{ 
+                height: '700px',
+                width: '1000px',
+            }}>
+                <FloatingImage />
+            </Box>
         </div>
     );
 };

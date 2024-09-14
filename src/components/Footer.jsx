@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <Box className="footer">
      
-      <Typography variant="body2" className="footer-text">
+      {/* <Typography variant="body2" className="footer-text">
         Designed and Developed by Guanqiao Wang
-      </Typography>
+      </Typography> */}
 
       <Typography variant="body2" className="footer-text">
         © 2024 Guanqiao Wang

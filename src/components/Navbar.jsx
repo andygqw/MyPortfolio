@@ -27,7 +27,6 @@ const Navbar = () => {
         height: '64px',
         display: 'flex',
         padding: '0 10px 0 16px !important',
-        maxWidth: '1280px',
       }}>
         <GitHubIcon onClick={() => window.open("https://github.com/andygqw")}
           className="logo-link"
