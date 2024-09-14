@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Typography, Box } from '@mui/material';
-import FloatingImage from 'src/components/FloatingImage';
-import ScrollingBar from 'src/components/ScrollingBar';
+import FloatingImage from './FloatingImage';
+import ScrollingBar from './ScrollingBar';
 import '../static/MainContent.css';
 
 const MainContent = () => {
