@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Typography, Box } from '@mui/material';
 import FloatingImage from './FloatingImage';
+import ScrollingBar from './ScrollingBar';
 import '../static/MainContent.css';
 
 const MainContent = () => {
@@ -29,11 +30,11 @@ const MainContent = () => {
                 </div>
             </div>
             <Box sx={{ 
-                height: '700px',
                 width: '1000px',
             }}>
                 <FloatingImage />
             </Box>
+            <ScrollingBar />
         </div>
     );
 };
