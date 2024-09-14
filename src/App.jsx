@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import MainContent from './components/MainContent';
 import './App.css'
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div className="app">
       
       <Navbar />
+      <MainContent />
 
     </div>
   );

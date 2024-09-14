@@ -1,8 +1,17 @@
-.logo {
-    height: 40px;
+
+
+.logo-link, .title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link:hover, .title-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .event-name {
+    padding-left: 10px;
     font-size: 1.75rem !important;
     font-weight: 900 !important;
     color: black;
