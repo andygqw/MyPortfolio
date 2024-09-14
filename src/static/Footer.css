@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    font-weight: 900 !important;
+    color: #ffffff;
+  }
+  
+  .footer-icons {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .footer-icons .MuiIconButton-root {
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  
+  .footer-icons .MuiIconButton-root:hover {
+    color: #72F08F;
+  }
+  

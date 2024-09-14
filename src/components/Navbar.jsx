@@ -39,7 +39,7 @@ const Navbar = () => {
           onClick={() => handleClick('/')}
         >
           <span className="event-other">/ </span>
-          Andy Wang
+          Portfolio
           <span className="event-other"> '24</span>
         </Typography>
 
