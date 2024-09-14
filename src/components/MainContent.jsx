@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Typography } from '@mui/material';
+import FloatingImage from './FloatingImage';
 import '../static/MainContent.css';
 
 const MainContent = () => {
@@ -15,7 +16,7 @@ const MainContent = () => {
                     Hi, I'm Andy Wang
                 </Typography>
                 <Typography variant="h5" className="event-info">
-                    New Grad • Open Source Contributor • Fullstack Developer
+                    New Grad • Fullstack Developer • Open Source Contributor
                 </Typography>
 
                 <div className="buttons">
@@ -27,6 +28,7 @@ const MainContent = () => {
                     </Button>
                 </div>
             </div>
+            <FloatingImage />
         </div>
     );
 };

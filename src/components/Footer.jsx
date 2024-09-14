@@ -5,7 +5,7 @@ import '../static/Footer.css';
 
 const Footer = () => {
   return (
-    <Box component="footer" className="footer">
+    <Box className="footer">
      
       <Typography variant="body2" className="footer-text">
         Designed and Developed by Guanqiao Wang
@@ -16,7 +16,7 @@ const Footer = () => {
       </Typography>
 
       <Box className="footer-icons">
-        <IconButton href="https://github.com" target="_blank">
+        <IconButton href="https://github.com/andygqw" target="_blank">
           <GitHub />
         </IconButton>
         <IconButton href="https://linkedin.com" target="_blank">
