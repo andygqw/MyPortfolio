@@ -29,7 +29,7 @@ const MainContent = () => {
                     </Button>
                 </div>
             </div>
-            <Box sx={{ 
+            <Box sx={{
                 width: '1000px',
             }}>
                 <FloatingImage />
