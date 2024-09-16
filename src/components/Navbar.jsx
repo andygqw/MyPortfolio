@@ -44,9 +44,9 @@ const Navbar = () => {
 
         <div className="menu">
           <a href="#">Why me?</a>
+          <a href="#">Experiences</a>
           <a href="#">Projects</a>
           <a href="#">Resume</a>
-          <a href="#">Experiences</a>
           <a href="#">About</a>
         </div>
         <Button variant="contained" className="get-contacts">

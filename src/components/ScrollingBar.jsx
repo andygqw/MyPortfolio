@@ -21,7 +21,7 @@ const ScrollingBar = () => {
     return (
         <Box
             sx={{
-                // marginTop: 'auto',
+                marginTop: 'auto',
                 width: '100vw',
                 overflow: 'hidden',
                 whiteSpace: 'nowrap',
