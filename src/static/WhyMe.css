@@ -1,0 +1,35 @@
+.content-section {
+    /* background: linear-gradient(to bottom, #72F08F, white ); */
+    background-color: #0F1217;
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-title {
+    min-width: 58vw;
+    padding-top: 100px;
+    margin-bottom: 20px !important;
+    text-align: left !important;
+    font-weight: 900 !important;
+    font-size: 80px !important;
+}
+
+
+@media (min-height: 950px) {
+    .content-title {
+        padding-top: 0;
+    }
+}
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #9ceaa2, #28c13f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
