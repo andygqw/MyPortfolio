@@ -22,6 +22,7 @@ const Navbar = () => {
       margin: '1rem auto 0 auto',
       left: '0',
       border: '1px solid #E5E5E5',
+      overflowY: 'hidden',
     }}>
       <Toolbar sx={{
         height: '64px',
