@@ -44,11 +44,11 @@ const Navbar = () => {
         </Typography>
 
         <div className="menu">
-          <a href="#">Why me?</a>
-          <a href="#">Experiences</a>
-          <a href="#">Projects</a>
-          <a href="#">Resume</a>
-          <a href="#">About</a>
+          <a href="#why-me">Why me?</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#project">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#about">About</a>
         </div>
         <Button variant="contained" className="get-contacts">
           Get contacts
