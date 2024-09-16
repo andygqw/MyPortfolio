@@ -16,6 +16,7 @@
     text-align: left !important;
     font-weight: 900 !important;
     font-size: 80px !important;
+    color: white;
 }
 
 @media (min-height: 950px) {
@@ -28,6 +29,7 @@
     text-align: left;
     font-size: 25px !important;
     font-weight: 300 !important;
+    color: #808994;
 }
 
 /* .gradient-text {
@@ -47,4 +49,5 @@
 .important-text {
     font-weight: 900;
     font-size: 2rem;
+    color: white;
 }

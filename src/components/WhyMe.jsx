@@ -17,12 +17,12 @@ const TextComponent = () => {
                     }}
                 >
                     <Typography className='content-text'>
-                        Hello, my name is
-                        <span className='gradient-text'>
+                        Hello all, my name is
+                        <span className='highlight-text'>
                             {' '}Guanqiao Wang
                         </span>
                         , I go by
-                        <span className='gradient-text'>
+                        <span className='highlight-text'>
                             {' '}Andy Wang
                         </span>
                         .
@@ -38,7 +38,7 @@ const TextComponent = () => {
                         .
                     </Typography>
                     <Typography className='content-text'>
-                        I've worked on developing and optimizing scalable systems using technologies like
+                        I've worked on developing and optimizing scalable systems using frameworks like
                         <span className='highlight-text'>
                             {' '}Spring Boot, .NET, Node.JS, React{' '}
                         </span>
@@ -60,7 +60,7 @@ const TextComponent = () => {
                     </Typography>
 
                     <Typography className='content-text' sx={{ marginTop: '20px' }}>
-                        <span className='important-text'>Please explore my portfolio to learn more about my skills.</span>
+                        <span className='important-text'>Please scroll down to learn more about my skills.</span>
                     </Typography>
                 </Box>
             </Box>
