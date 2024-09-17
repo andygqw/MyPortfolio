@@ -59,9 +59,9 @@ const TextComponent = () => {
                         I am passionate about building products that have a direct impact on users and am always eager to learn and grow in fast-paced environments.
                     </Typography>
 
-                    <Typography className='content-text' sx={{ marginTop: '20px' }}>
+                    {/* <Typography className='content-text' sx={{ marginTop: '20px' }}>
                         <span className='important-text'>Please scroll down to learn more about my skills.</span>
-                    </Typography>
+                    </Typography> */}
                 </Box>
             </Box>
         </section>

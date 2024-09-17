@@ -1,0 +1,32 @@
+.hanging-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 300px;
+    position: relative;
+    background-color: transparent;
+}
+
+.string {
+    width: 1px;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: relative;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: -5px;
+}
+
+.donut img {
+    width: 150px;
+    height: auto;
+    display: block;
+}

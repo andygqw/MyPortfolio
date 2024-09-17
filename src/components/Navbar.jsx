@@ -45,8 +45,8 @@ const Navbar = () => {
 
         <div className="menu">
           <a href="#why-me">Why me?</a>
-          <a href="#experiences">Experiences</a>
           <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
           <a href="#resume">Resume</a>
           <a href="#about">About</a>
         </div>

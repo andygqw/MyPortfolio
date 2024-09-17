@@ -1,0 +1,11 @@
+.skill-logo {
+    width: 100px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.skill-logo:hover {
+    opacity: 1;
+}

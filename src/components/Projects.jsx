@@ -3,6 +3,7 @@ import { Box, Typography, Button, Divider } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
 import { styled } from '@mui/system';
+import HangingDonut from './HangingObject';
 
 const CareerPathContainer = styled(Box)(() => ({
   padding: '80px 0px',
@@ -168,6 +169,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <CareerPathContainer>
+        <HangingDonut image="src/static/donut.webp"/>
         <CareerHeader>
           Selected Projects
         </CareerHeader>
