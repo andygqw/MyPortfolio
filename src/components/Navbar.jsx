@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import '../static/Navbar.css';
@@ -44,11 +46,16 @@ const Navbar = () => {
         </Typography>
 
         <div className="menu">
-          <a href="#why-me">Why me?</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#resume">Resume</a>
-          <a href="#about">About</a>
+          {/* <a href="/#why-me">Why me?</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#skills">Skills</a>
+          <a href="/resume">Resume</a>
+          <a href="#about">About</a> */}
+          <HashLink smooth to="/#why-me">Why me?</HashLink>
+          <HashLink smooth to="/#projects">Projects</HashLink>
+          <HashLink smooth to="/#skills">Skills</HashLink>
+          <Link to="/resume">Resume</Link>
+          <HashLink smooth to="/#about">About</HashLink>
         </div>
         <Button variant="contained" className="get-contacts">
           Get contacts
