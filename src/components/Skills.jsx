@@ -1,11 +1,28 @@
 import React from 'react';
-import { Box, Typography, Grid, Divider } from '@mui/material';
+import { Box, Typography, Divider } from '@mui/material';
 import '../static/Skills.css';
 import HangingObject from './HangingObject';
+import dog from '../static/dog.webp';
+import java from '../static/skills/java.png';
+import csharp from '../static/skills/csharp.png';
+import python from '../static/skills/python.png';
+import typescript from '../static/skills/typescript.svg';
+import javascript from '../static/skills/javascript.png';
+import aws from '../static/skills/aws.png';
+import cloudflare from '../static/skills/cloudflare.png';
+import linux from '../static/skills/linux.png';
+import git from '../static/skills/git.png';
+import mysql from '../static/skills/mysql.png';
+import docker from '../static/skills/docker.png';
+import postman from '../static/skills/postman.png';
+import spring from '../static/skills/spring.png';
+import dotnet from '../static/skills/dotnet.png';
+import nodejs from '../static/skills/nodejs.png';
+import react from '../static/skills/react.png';
+import aws_cert from '../static/skills/aws-certified-solutions-architect-associate.png';
 
 
 const Logo = ({ image, alt }) => {
-    const str = 'src/static/skills/' + image;
     return (
         <Box sx={{
             height: '100px',
@@ -22,7 +39,7 @@ const Logo = ({ image, alt }) => {
                 border: '2px solid white',
             },
         }}>
-            <img src={str} alt={alt} className='skill-logo' style={{ maxHeight: '80%' }} />
+            <img src={image} alt={alt} className='skill-logo' style={{ maxHeight: '80%' }} />
         </Box>
     );
 };
@@ -33,7 +50,7 @@ const Skills = () => {
             <Box
                 className="skills-container"
             >
-                <HangingObject image='src/static/dog.webp' />
+                <HangingObject image={dog} />
                 <Typography gutterBottom sx={{
                     marginTop: '60px',
                     marginBottom: '20px',
@@ -51,18 +68,18 @@ const Skills = () => {
                     gap: '80px',
                     maxWidth: '1200px',
                 }}>
-                    <Logo image='java.png' alt='java' />
-                    <Logo image='csharp.png' alt='csharp' />
-                    <Logo image='python.png' alt='python' />
-                    <Logo image='typescript.svg' alt='typescript' />
-                    <Logo image='javascript.png' alt='javascript' />
-                    <Logo image='aws.png' alt='aws' />
-                    <Logo image='cloudflare.png' alt='cloudflare' />
-                    <Logo image='linux.png' alt='linux' />
-                    <Logo image='git.png' alt='git' />
-                    <Logo image='mysql.png' alt='mysql' />
-                    <Logo image='docker.png' alt='docker' />
-                    <Logo image='postman.png' alt='postman' />
+                    <Logo image={java} alt='java' />
+                    <Logo image={csharp} alt='csharp' />
+                    <Logo image={python} alt='python' />
+                    <Logo image={typescript} alt='typescript' />
+                    <Logo image={javascript} alt='javascript' />
+                    <Logo image={aws} alt='aws' />
+                    <Logo image={cloudflare} alt='cloudflare' />
+                    <Logo image={linux} alt='linux' />
+                    <Logo image={git} alt='git' />
+                    <Logo image={mysql} alt='mysql' />
+                    <Logo image={docker} alt='docker' />
+                    <Logo image={postman} alt='postman' />
                     {/* <Logo image='redis.png' alt='redis'/>
                     <Logo image='rabbitmq.png' alt='rabbitmq'/> */}
                 </Box>
@@ -84,10 +101,10 @@ const Skills = () => {
                     gap: '80px',
                     maxWidth: '1200px',
                 }}>
-                    <Logo image='spring.png' alt='spring' />
-                    <Logo image='dotnet.png' alt='dotnet' />
-                    <Logo image='nodejs.png' alt='nodejs' />
-                    <Logo image='react.png' alt='react' />
+                    <Logo image={spring} alt='spring' />
+                    <Logo image={dotnet} alt='dotnet' />
+                    <Logo image={nodejs} alt='nodejs' />
+                    <Logo image={react} alt='react' />
                     {/* <Logo image='flask.png' alt='flask'/> */}
                 </Box>
 
@@ -122,7 +139,7 @@ const Skills = () => {
                                 cursor: 'pointer',
                             },
                         }}>
-                        <img src='src/static/skills/aws-certified-solutions-architect-associate.png' alt='aws-saa' />
+                        <img src={aws_cert} alt='aws-saa' />
                         <Typography sx={{
                             fontWeight: 'bold',
                             marginLeft: '10px',
