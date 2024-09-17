@@ -16,7 +16,6 @@ const Main = () => {
       <WhyMe />
       <Projects />
       <Skills />
-      <Footer />
     </div>
   );
 };
@@ -32,6 +31,7 @@ const App = () => {
           <Route path='/resume' element={<ResumePage />} />
         </Routes>
 
+        <Footer />
       </div>
     </Router>
   );
