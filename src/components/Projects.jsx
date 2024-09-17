@@ -5,6 +5,10 @@ import FileOpenIcon from '@mui/icons-material/FileOpen';
 import { styled } from '@mui/system';
 import donut from '../static/donut.webp';
 import HangingDonut from './HangingObject';
+import gwtool from '../static/projects/gwtool.png'
+import whisper from '../static/projects/whisper.jpeg'
+import jat from '../static/projects/jat.png'
+import streamer from '../static/projects/streamer.png'
 
 const CareerPathContainer = styled(Box)(() => ({
   padding: '80px 0px',
@@ -223,7 +227,7 @@ const Projects = () => {
             - SSO across multiple services and applications.
             - Cookie-based JWT token for resource access.
             - Post and reply system with file attachments."
-            image="src/static/gwtool.png"
+            image={gwtool}
             alt="gwtool"
           />
         </CareerMilestone>
@@ -249,7 +253,7 @@ const Projects = () => {
             - Semaphore-based resources in multi-threading.
             - Integrates with speech-to-text AI model.
             - Performance-tuned and fault tolerance."
-            image="src/static/whisper.jpeg"
+            image={whisper}
             alt="whisper"
           />
         </CareerMilestone>
@@ -274,7 +278,7 @@ const Projects = () => {
             - SSO across multiple services and applications.
             - Quick Add Feature to auto-fill from LinkedIn URLs
             - Dynamic Row Styling based on job application status."
-            image="src/static/jat.png"
+            image={jat}
             alt="jat"
           />
         </CareerMilestone>
@@ -299,7 +303,7 @@ const Projects = () => {
             highlight="- Supports MP4, MOV, PDF, JPG, PNG, etc.
             - Recursive design in directory browsing.
             - RESTful API for streaming services."
-            image="src/static/streamer.png"
+            image={streamer}
             alt="streamer"
           />
         </CareerMilestone>
