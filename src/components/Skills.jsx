@@ -1,91 +1,140 @@
 import React from 'react';
-import { Box, Typography, Grid } from '@mui/material';
+import { Box, Typography, Grid, Divider } from '@mui/material';
 import '../static/Skills.css';
+import HangingObject from './HangingObject';
 
 
-const logo = ({ image, alt }) => {
+const Logo = ({ image, alt }) => {
+    const str = 'src/static/skills/' + image;
     return (
         <Box sx={{
             height: '100px',
+            // width: '100px',
+            // maxWidth: '300px',
+            width: 'auto',
+            padding: '10px 30px',
             borderRadius: '20px',
             border: '2px solid transparent',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            '&:hover': {
+                border: '2px solid white',
+            },
         }}>
-            <img src={image} alt={alt}/>
+            <img src={str} alt={alt} className='skill-logo' style={{ maxHeight: '80%' }} />
         </Box>
     );
 };
 
 const Skills = () => {
-  return (
-    <Box
-      sx={{
-        backgroundColor: '#1a1a1a',
-        padding: '40px',
-        color: '#fff',
-        textAlign: 'center',
-      }}
-    >
-      <Typography variant="h5" gutterBottom sx={{ marginBottom: '20px', color: '#aaa' }}>
-        PROFESSIONAL SKILLS
-      </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/microsoft.png" alt="Microsoft" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/atlassian.png" alt="Atlassian" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/octopus.png" alt="Octopus" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/kpmg.png" alt="KPMG" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/octopus.png" alt="Octopus" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/kpmg.png" alt="KPMG" className="skill-logo" />
-        </Grid>
-      </Grid>
+    return (
+        <section id='skills'>
+            <Box
+                className="skills-container"
+            >
+                <HangingObject image='src/static/dog.webp' />
+                <Typography gutterBottom sx={{
+                    marginTop: '60px',
+                    marginBottom: '20px',
+                    color: '#aaa',
+                    fontWeight: 'bold',
+                    width: '80%'
+                }}>
+                    PROFESSIONAL SKILLS
+                    <Divider color='grey' />
+                </Typography>
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '80px',
+                    maxWidth: '1200px',
+                }}>
+                    <Logo image='java.png' alt='java' />
+                    <Logo image='csharp.png' alt='csharp' />
+                    <Logo image='python.png' alt='python' />
+                    <Logo image='typescript.svg' alt='typescript' />
+                    <Logo image='javascript.png' alt='javascript' />
+                    <Logo image='aws.png' alt='aws' />
+                    <Logo image='cloudflare.png' alt='cloudflare' />
+                    <Logo image='linux.png' alt='linux' />
+                    <Logo image='git.png' alt='git' />
+                    <Logo image='mysql.png' alt='mysql' />
+                    <Logo image='docker.png' alt='docker' />
+                    <Logo image='postman.png' alt='postman' />
+                    {/* <Logo image='redis.png' alt='redis'/>
+                    <Logo image='rabbitmq.png' alt='rabbitmq'/> */}
+                </Box>
 
-      <Typography variant="h5" gutterBottom sx={{ marginTop: '40px', marginBottom: '20px', color: '#aaa' }}>
-        FRAMEWORKS
-      </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/docker.png" alt="Docker" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/figma.png" alt="Figma" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/sentry.png" alt="Sentry" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/postman.png" alt="Postman" className="skill-logo" />
-        </Grid>
-      </Grid>
+                <Typography gutterBottom sx={{
+                    marginTop: '60px',
+                    marginBottom: '20px',
+                    color: '#aaa',
+                    fontWeight: 'bold',
+                    width: '80%'
+                }}>
+                    FRAMEWORKS
+                    <Divider color='grey' />
+                </Typography>
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '80px',
+                    maxWidth: '1200px',
+                }}>
+                    <Logo image='spring.png' alt='spring' />
+                    <Logo image='dotnet.png' alt='dotnet' />
+                    <Logo image='nodejs.png' alt='nodejs' />
+                    <Logo image='react.png' alt='react' />
+                    {/* <Logo image='flask.png' alt='flask'/> */}
+                </Box>
 
-      <Typography variant="h5" gutterBottom sx={{ marginTop: '40px', marginBottom: '20px', color: '#aaa' }}>
-        CERTIFIED
-      </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/speakeasy.png" alt="Speakeasy" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/opsera.png" alt="Opsera" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/launchdarkly.png" alt="LaunchDarkly" className="skill-logo" />
-        </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <img src="/path-to-logo/swim.png" alt="Swim" className="skill-logo" />
-        </Grid>
-      </Grid>
-    </Box>
-  );
+                <Typography gutterBottom sx={{
+                    marginTop: '60px',
+                    marginBottom: '20px',
+                    color: '#aaa',
+                    fontWeight: 'bold',
+                    width: '80%'
+                }}>
+                    CERTIFICATION
+                    <Divider color='grey' />
+                </Typography>
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '80px',
+                    maxWidth: '1200px',
+                }}>
+                    <Box onClick={() => window.open('https://www.credly.com/badges/751eb12e-4225-4959-8c6a-cb31e4cd1547/public_url', '_blank')}
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            justifyContent: 'center',
+                            padding: '10px 30px',
+                            alignItems: 'center',
+                            borderRadius: '20px',
+                            border: '2px solid transparent',
+                            '&:hover': {
+                                border: '2px solid white',
+                                cursor: 'pointer',
+                            },
+                        }}>
+                        <img src='src/static/skills/aws-certified-solutions-architect-associate.png' alt='aws-saa' />
+                        <Typography sx={{
+                            fontWeight: 'bold',
+                            marginLeft: '10px',
+                            color: '#aaa',
+                        }}>
+                            click here to verify
+                        </Typography>
+                    </Box>
+                </Box>
+            </Box>
+        </section>
+    );
 };
 
 export default Skills;

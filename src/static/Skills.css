@@ -1,6 +1,14 @@
+.skills-container {
+    background: linear-gradient(to bottom, #0F1217, #050609);
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .skill-logo {
-    width: 100px;
-    height: auto;
     filter: brightness(0) invert(1);
     opacity: 0.9;
     transition: opacity 0.3s;

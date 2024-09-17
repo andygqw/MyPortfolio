@@ -244,7 +244,7 @@ const Projects = () => {
             purpose="This project is a Java-based tool designed to generate subtitles for large number of long video or audio files by transcribing audios with OpenAI Whisper model through Cloudflare Workers AI.
             The tool handles multiple large files at once, making it highly efficient for bulk video processing."
             highlight="- Transcribe multiple large videos simultaneously.
-            - Multithreading and concurrency for 15x speedups.
+            - Multithreading and concurrency for 25x speedups.
             - Semaphore-based resources in multi-threading.
             - Integrates with speech-to-text AI model.
             - Performance-tuned and fault tolerance."
