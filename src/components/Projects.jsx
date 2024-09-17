@@ -85,7 +85,6 @@ const GitHubButton = ({ url }) => {
       }}
       sx={{
         // marginBottom: '40px',
-        marginRight: '8px',
         backgroundColor: 'grey',
         padding: '2px 8px',
         borderRadius: '8px',
@@ -112,6 +111,7 @@ const DemoButton = ({ url }) => {
       }}
       sx={{
         // marginBottom: '40px',
+        marginLeft: '8px',
         backgroundColor: 'grey',
         padding: '2px 8px',
         borderRadius: '8px',
@@ -135,7 +135,6 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
     <Box sx={{
       display: 'flex',
       justifyContent: 'space-between',
-      //alignItems: 'center',
       flexDirection: 'row',
     }}>
       <Box sx={{width:'50%'}}>
@@ -158,8 +157,8 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           {highlight}
         </Typography>
       </Box>
-      <Box sx={{display:'flex',alignItems:'center',width:'45%'}}>
-        <img src={image} alt={alt} style={{maxWidth:'100%', height:'fit-content'}}/>
+      <Box sx={{display:'flex',alignItems:'center',justifyContent:'right',width:'45%'}}>
+        <img src={image} alt={alt} style={{maxWidth:'90%', height:'fit-content'}}/>
       </Box>
     </Box>
   );
@@ -218,7 +217,7 @@ const Projects = () => {
             It also incorporates user authentication, permission-based access to resources, and Facebook type posts management."
             highlight="- Integration with Cloudflare R2 via AWS SDK.
             - Secure file operations using presigned URLs.
-            - Single Sign On across multiple applications.
+            - SSO across multiple services and applications.
             - Cookie-based JWT token for resource access.
             - Post and reply system with file attachments."
             image="src/static/gwtool.png"
@@ -266,9 +265,39 @@ const Projects = () => {
             </div>
           </TimeAndDetails>
           <ProjectDetails
-            purpose=""
-            highlight=""
+            purpose="This project is a Job Application Tracking app built using React.js for the frontend and integrated with a Cloudflare Workers backend.
+            It allows users to manage their job applications, providing features for adding, editing, deleting, and quick add applications, with a seamless UI/UX experience across different devices, including mobile."
+            highlight="- JWT Authentication for secure login.
+            - SSO across multiple services and applications.
+            - Quick Add Feature to auto-fill from LinkedIn URLs
+            - Dynamic Row Styling based on job application status."
+            image="src/static/jat.png"
             alt="jat"
+          />
+        </CareerMilestone>
+
+        <CareerMilestone>
+          <MilestoneHeader variant="h6">
+            <RedCapsuleIcon />
+            Local Directory Streamer
+          </MilestoneHeader>
+          <Line />
+          <TimeAndDetails>
+            <Typography sx={{color:'grey'}}>Spring Boot / React </Typography>
+            <div>
+              <GitHubButton url='https://github.com/andygqw/LocalMediaStreamer' />
+              {/* <DemoButton url='https://tool.tiny-pink.com/' /> */}
+            </div>
+          </TimeAndDetails>
+          <ProjectDetails
+            purpose="This is a Spring Boot / React project for browsing and streaming medias in local directories.
+            This ensure a fast speed media streaming across the network.
+            Very useful when we have a media sharing services like NAS."
+            highlight="- Supports MP4, MOV, PDF, JPG, PNG, etc.
+            - Recursive design in directory browsing.
+            - RESTful API for streaming services."
+            image="src/static/streamer.png"
+            alt="streamer"
           />
         </CareerMilestone>
       </CareerPathContainer>
