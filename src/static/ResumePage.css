@@ -1,9 +1,24 @@
 .resume-container {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #115cdd, #050609);
+    background: linear-gradient(180deg, #010101, #020448);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.download-button {
+    box-shadow: none;
+    border-radius: 8px !important;
+    padding: 12px 38px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    border: 2px solid grey !important;
+}
+
+.download-button:hover {
+    cursor: pointer;
+    border: 2px solid white !important;
 }

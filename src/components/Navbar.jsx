@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
@@ -7,8 +8,13 @@ import '../static/Navbar.css';
 
 const Navbar = () => {
 
-  const handleClick = (url) => {
-    window.location.href = url;
+  const navigate = useNavigate();
+
+  const handleClick = (hash) => {
+    navigate('/');
+    setTimeout(() => {
+      window.location.hash = hash;
+    }, 100);
   };
 
   return (
@@ -38,7 +44,7 @@ const Navbar = () => {
         <Typography 
           variant="h6"
           className="event-name title-link"
-          onClick={() => handleClick('/')}
+          onClick={() => handleClick('#main')}
         >
           <span className="event-other">/ </span>
           Portfolio
@@ -57,7 +63,7 @@ const Navbar = () => {
           <Link to="/resume">Resume</Link>
           <HashLink smooth to="/#about">About</HashLink>
         </div>
-        <Button variant="contained" className="get-contacts">
+        <Button variant="contained" className="get-contacts" onClick={()=>handleClick('#contact')}>
           Get contacts
         </Button>
       </Toolbar>

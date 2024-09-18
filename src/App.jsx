@@ -5,6 +5,7 @@ import MainContent from './components/MainContent';
 import WhyMe from './components/WhyMe';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import About from './components/About';
 import Footer from './components/Footer';
 import ResumePage from './components/ResumePage';
 import './App.css'
@@ -16,6 +17,7 @@ const Main = () => {
       <WhyMe />
       <Projects />
       <Skills />
+      <About />
     </div>
   );
 };
