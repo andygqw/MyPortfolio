@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Typography, Box } from '@mui/material';
+import { HashLink } from 'react-router-hash-link';
 import FloatingImage from './FloatingImage';
 import ScrollingBar from './ScrollingBar';
 import '../static/MainContent.css';
@@ -25,18 +26,20 @@ const MainContent = () => {
                         <Button
                             size="large"
                             className="primary-button"
-                            onClick={() => window.location.href='/resume'}
+                            onClick={() => window.location.href = '/resume'}
                         >
                             Get Resume {'>'}
                         </Button>
-                        <Button
-                            className="secondary-button"
-                            size="large"
-                            style={{ marginLeft: '20px' }}
-                            onClick={() => window.location.hash='#why-me'}
-                        >
-                            Know more about me {'>'}
-                        </Button>
+                        <HashLink smooth to="/#why-me">
+                            <Button
+                                className="secondary-button"
+                                size="large"
+                                style={{ marginLeft: '20px' }}
+                                onClick={() => window.location.hash = '#why-me'}
+                            >
+                                Know more about me {'>'}
+                            </Button>
+                        </HashLink>
                     </div>
                 </div>
                 <Box sx={{
