@@ -22,11 +22,20 @@ const MainContent = () => {
                     </Typography>
 
                     <div className="buttons">
-                        <Button size="large" className="primary-button">
+                        <Button
+                            size="large"
+                            className="primary-button"
+                            onClick={() => window.location.href='/resume'}
+                        >
                             Get Resume {'>'}
                         </Button>
-                        <Button className="secondary-button" size="large" style={{ marginLeft: '20px' }}>
-                            Check background {'>'}
+                        <Button
+                            className="secondary-button"
+                            size="large"
+                            style={{ marginLeft: '20px' }}
+                            onClick={() => window.location.hash='#why-me'}
+                        >
+                            Know more about me {'>'}
                         </Button>
                     </div>
                 </div>
