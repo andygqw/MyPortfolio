@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import GitHubCalendar from "react-github-calendar";
 import HangingObject from './HangingObject';
 import heart from '../static/heart.webp';
+import ContactInfo from './ContactInfo';
 import '../static/About.css';
 
 const About = () => {
@@ -11,7 +12,18 @@ const About = () => {
             <section id='about'>
                 <Box className='about-section'>
                     <HangingObject image={heart} />
-                    <Box sx={{ marginTop: '40px' }}>
+                    <Box onClick={() => window.open("https://github.com/andygqw")}
+                        sx={{
+                            marginTop: '40px',
+                            cursor: 'pointer',
+                            border: '2px solid transparent',
+                            borderRadius: '20px',
+                            '&:hover': {
+                                border: '2px solid white',
+                            },
+                            padding: '40px',
+                        }}
+                    >
                         <Box sx={{ display: 'block' }}>
                             <Typography className='github-title'>
                                 @andygqw on GitHub
@@ -23,11 +35,9 @@ const About = () => {
                             fontSize={20}
                         />
                     </Box>
-                    <section id='contact'>
-                        <Box className='contact-section'>
-                            
-                        </Box>
-                    </section>
+                    <Box className='contact-section'>
+                        <ContactInfo />
+                    </Box>
                 </Box>
             </section>
         </>

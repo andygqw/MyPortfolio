@@ -11,6 +11,8 @@
   background-color: #242424;
   /* background: linear-gradient(to bottom, white, #72F08F); */
 
+  scroll-behavior: smooth;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
