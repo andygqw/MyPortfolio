@@ -1,0 +1,19 @@
+.about-section {
+    background: linear-gradient(180deg, #050609, #020448);
+    padding: 80px 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.github-title {
+    /* text-align: left; */
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    margin-bottom: 20px !important;
+}
+
+.contact-section {
+    margin-top: 40px;
+}
