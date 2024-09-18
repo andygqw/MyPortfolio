@@ -40,7 +40,7 @@ const ResumePage = () => {
             <Box 
               sx={{
                 width: '100%',
-                maxWidth: '750px',
+                maxWidth: '1000px',
                 margin: '0 auto',
                 overflow: 'auto',
                 border: '1px solid rgba(0, 0, 0, 0.3)',
@@ -52,6 +52,7 @@ const ResumePage = () => {
                         sx={{
                             border: '1px solid rgba(0, 0, 0, 0.3)',
                             height: '100%',
+                            width: '100%',
                         }}
                     >
                         <Viewer fileUrl={resume} renderPage={renderPage}/>

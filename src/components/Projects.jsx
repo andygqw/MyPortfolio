@@ -292,7 +292,7 @@ const Projects = () => {
           <TimeAndDetails>
             <Typography sx={{color:'grey'}}>Spring Boot / React </Typography>
             <div>
-              <GitHubButton url='https://github.com/andygqw/LocalMediaStreamer' />
+              <GitHubButton url='https://github.com/andygqw/LocalDirectoryBrowser' />
               {/* <DemoButton url='https://tool.tiny-pink.com/' /> */}
             </div>
           </TimeAndDetails>
