@@ -1,5 +1,7 @@
 # My Portfolio
 
+**Click [here](https://tiny-pink.com) to view my portfolio in browser**.
+
 Welcome to the personal portfolio of **Guanqiao (Andy) Wang**. This portfolio showcases my projects, skills, and experience as a software engineer.
 
 <img src='images/Screenshot1.png' />
