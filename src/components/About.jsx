@@ -33,7 +33,7 @@ const About = () => {
                             username='andygqw'
                             blockSize={16}
                             fontSize={20}
-                            textColor='#aaa'
+                            colorScheme='light'
                         />
                     </Box>
                     <Box className='contact-section'>
