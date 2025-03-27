@@ -150,7 +150,7 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           fontSize: '1.2rem',
           lineHeight: '1.75',
           marginBottom: '20px',
-          color: '#aaaaaa', // Light grey for purpose text
+          color: '#e0e0e1', // Updated to #e0e0e1
         }}>
           {purpose}
         </Typography>
@@ -160,7 +160,7 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           fontSize: '1.2rem',
           fontWeight: 'bold',
           lineHeight: '1.5',
-          color: '#ffffffde', // Updated to slightly transparent white
+          color: '#e0e0e1', // Updated to #e0e0e1
         }}>
           {highlight}
         </Typography>
@@ -171,6 +171,16 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
     </Box>
   );
 };
+
+// And for the description text:
+        <Typography variant="body1" sx={{ 
+              marginBottom: '20px', 
+              textAlign: 'center', 
+              maxWidth: '550px',
+              color: '#e0e0e1' // Updated to #e0e0e1
+            }}>
+              Click on Demo buttons to view deployed projects, use username "Demo" and password "Demo" to enjoy SSO demo login across projects.
+            </Typography>
 
 const Projects = () => {
   return (
