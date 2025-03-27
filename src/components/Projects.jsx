@@ -181,9 +181,14 @@ const Projects = () => {
           Selected Projects
         </CareerHeader>
 
-        <Typography variant="body1" sx={{ marginBottom: '20px', textAlign: 'center', maxWidth: '550px' }}>
-          Click on Demo buttons to view deployed projects, use username "Demo" and password "Demo" to enjoy SSO demo login across projects.
-        </Typography>
+        <Typography variant="body1" sx={{ 
+              marginBottom: '20px', 
+              textAlign: 'center', 
+              maxWidth: '550px',
+              color: '#aaaaaa' // Added light gray color that will remain consistent
+            }}>
+              Click on Demo buttons to view deployed projects, use username "Demo" and password "Demo" to enjoy SSO demo login across projects.
+            </Typography>
 
         <Button
           variant="contained"
