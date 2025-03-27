@@ -8,6 +8,7 @@ import csharp from '../static/skills/csharp.png';
 import python from '../static/skills/python.png';
 import typescript from '../static/skills/typescript.svg';
 import javascript from '../static/skills/javascript.png';
+import swift from '../static/skills/swift.png';
 import aws from '../static/skills/aws.png';
 import cloudflare from '../static/skills/cloudflare.png';
 import linux from '../static/skills/linux.png';
@@ -73,15 +74,16 @@ const Skills = () => {
                     <Logo image={python} alt='python' />
                     <Logo image={typescript} alt='typescript' />
                     <Logo image={javascript} alt='javascript' />
+                    <Logo image={swift} alt='swift' />
                     <Logo image={aws} alt='aws' />
                     <Logo image={cloudflare} alt='cloudflare' />
                     <Logo image={linux} alt='linux' />
-                    <Logo image={git} alt='git' />
+                    {/* <Logo image={git} alt='git' /> */}
                     <Logo image={mysql} alt='mysql' />
                     <Logo image={docker} alt='docker' />
-                    <Logo image={postman} alt='postman' />
-                    {/* <Logo image='redis.png' alt='redis'/>
-                    <Logo image='rabbitmq.png' alt='rabbitmq'/> */}
+                    {/* <Logo image={postman} alt='postman' /> */}
+                    <Logo image='redis.png' alt='redis'/>
+                    <Logo image='rabbitmq.png' alt='rabbitmq'/>
                 </Box>
 
                 <Typography gutterBottom sx={{
