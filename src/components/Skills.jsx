@@ -21,7 +21,7 @@ import spring from '../static/skills/spring.png';
 import dotnet from '../static/skills/dotnet.png';
 import nodejs from '../static/skills/nodejs.png';
 import react from '../static/skills/react.png';
-import swift from '../static/skills/swift.png';
+import swift from '../static/skills/swift.webp';
 import aws_cert from '../static/skills/aws-certified-solutions-architect-associate.png';
 
 
