@@ -15,6 +15,7 @@ import git from '../static/skills/git.png';
 import mysql from '../static/skills/mysql.png';
 import docker from '../static/skills/docker.png';
 import postman from '../static/skills/postman.png';
+import eureka from '../static/skills/eureka.png';
 import redis from '../static/skills/redis.png';
 import rabbitmq from '../static/skills/rabbitmq.png';
 import spring from '../static/skills/spring.png';
@@ -72,20 +73,21 @@ const Skills = () => {
                     maxWidth: '1200px',
                 }}>
                     <Logo image={java} alt='java' />
-                    <Logo image={csharp} alt='csharp' />
-                    <Logo image={python} alt='python' />
                     <Logo image={typescript} alt='typescript' />
                     <Logo image={javascript} alt='javascript' />
                     <Logo image={swift} alt='swift' />
+                    <Logo image={csharp} alt='csharp' />
+                    <Logo image={python} alt='python' />
                     <Logo image={aws} alt='aws' />
                     <Logo image={cloudflare} alt='cloudflare' />
                     <Logo image={linux} alt='linux' />
                     {/* <Logo image={git} alt='git' /> */}
                     <Logo image={mysql} alt='mysql' />
                     <Logo image={docker} alt='docker' />
+                    <Logo image={eureka} alt='eureka' />
                     {/* <Logo image={postman} alt='postman' /> */}
-                    <Logo image={redis} alt='redis'/>
-                    <Logo image={rabbitmq} alt='rabbitmq'/>
+                    {/* <Logo image={redis} alt='redis'/>
+                    <Logo image={rabbitmq} alt='rabbitmq'/> */}
                 </Box>
 
                 <Typography gutterBottom sx={{
