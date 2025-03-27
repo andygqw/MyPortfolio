@@ -8,7 +8,6 @@ import csharp from '../static/skills/csharp.png';
 import python from '../static/skills/python.png';
 import typescript from '../static/skills/typescript.svg';
 import javascript from '../static/skills/javascript.png';
-import swift from '../static/skills/swift.png';
 import aws from '../static/skills/aws.png';
 import cloudflare from '../static/skills/cloudflare.png';
 import linux from '../static/skills/linux.png';
@@ -16,10 +15,13 @@ import git from '../static/skills/git.png';
 import mysql from '../static/skills/mysql.png';
 import docker from '../static/skills/docker.png';
 import postman from '../static/skills/postman.png';
+import redis from '../static/skills/redis.png';
+import rabbitmq from '../static/skills/rabbitmq.png';
 import spring from '../static/skills/spring.png';
 import dotnet from '../static/skills/dotnet.png';
 import nodejs from '../static/skills/nodejs.png';
 import react from '../static/skills/react.png';
+import swift from '../static/skills/swift.png';
 import aws_cert from '../static/skills/aws-certified-solutions-architect-associate.png';
 
 
@@ -82,8 +84,8 @@ const Skills = () => {
                     <Logo image={mysql} alt='mysql' />
                     <Logo image={docker} alt='docker' />
                     {/* <Logo image={postman} alt='postman' /> */}
-                    <Logo image='redis.png' alt='redis'/>
-                    <Logo image='rabbitmq.png' alt='rabbitmq'/>
+                    <Logo image={redis} alt='redis'/>
+                    <Logo image={rabbitmq} alt='rabbitmq'/>
                 </Box>
 
                 <Typography gutterBottom sx={{
