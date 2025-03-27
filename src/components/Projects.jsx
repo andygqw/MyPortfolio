@@ -150,7 +150,7 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           fontSize: '1.2rem',
           lineHeight: '1.75',
           marginBottom: '20px',
-          color: '#aaaaaa', // Changed to light grey
+          color: '#aaaaaa', // Light grey for purpose text
         }}>
           {purpose}
         </Typography>
@@ -160,7 +160,7 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           fontSize: '1.2rem',
           fontWeight: 'bold',
           lineHeight: '1.5',
-          color: '#eeeeee', // Changed to light grey for highlight text
+          color: '#ffffffde', // Updated to slightly transparent white
         }}>
           {highlight}
         </Typography>
@@ -205,7 +205,7 @@ const Projects = () => {
             },
           }}
         >
-          Explore Full Github Repo {'>'}
+          Explore All On GitHub {'>'}
         </Button>
 
         <CareerMilestone>
