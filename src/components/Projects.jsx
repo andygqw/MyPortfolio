@@ -173,14 +173,14 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
 };
 
 // And for the description text:
-        <Typography variant="body1" sx={{ 
-              marginBottom: '20px', 
-              textAlign: 'center', 
-              maxWidth: '550px',
-              color: '#e0e0e1' // Updated to #e0e0e1
-            }}>
-              Click on Demo buttons to view deployed projects, use username "Demo" and password "Demo" to enjoy SSO demo login across projects.
-            </Typography>
+<Typography variant="body1" sx={{ 
+  marginBottom: '20px', 
+  textAlign: 'center', 
+  maxWidth: '550px',
+  color: '#e0e0e1' // Updated to #e0e0e1
+}}>
+  Click on Demo buttons to view deployed projects, use username "Demo" and password "Demo" to enjoy SSO demo login across projects.
+</Typography>
 
 const Projects = () => {
   return (
