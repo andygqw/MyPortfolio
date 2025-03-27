@@ -25,7 +25,7 @@ const About = () => {
                         }}
                     >
                         <Box sx={{ display: 'block' }}>
-                            <Typography className='github-title'>
+                            <Typography className='github-title' sx={{ color: 'white' }}>
                                 @andygqw on GitHub
                             </Typography>
                         </Box>
@@ -33,6 +33,15 @@ const About = () => {
                             username='andygqw'
                             blockSize={16}
                             fontSize={20}
+                            colorScheme='light'
+                            theme={{
+                                text: 'white',
+                                grade4: '#39d353',
+                                grade3: '#26a641',
+                                grade2: '#006d32',
+                                grade1: '#0e4429',
+                                grade0: '#161b22'
+                            }}
                         />
                     </Box>
                     <Box className='contact-section'>
