@@ -150,6 +150,7 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           fontSize: '1.2rem',
           lineHeight: '1.75',
           marginBottom: '20px',
+          color: 'grey', // Added explicit color for purpose text
         }}>
           {purpose}
         </Typography>
@@ -159,6 +160,7 @@ const ProjectDetails = ({ purpose, highlight, image, alt }) => {
           fontSize: '1.2rem',
           fontWeight: 'bold',
           lineHeight: '1.5',
+          color: 'white', // Added explicit color for highlight text
         }}>
           {highlight}
         </Typography>
